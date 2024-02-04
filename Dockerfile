@@ -8,7 +8,7 @@ WORKDIR  /home/ramesh/srl/
 
 # Add the required files
 ADD target/docker-resources     ./
-ADD runner.sh                   runner.sh
+ADD runner.sh  runner.sh
 
 # Start the runner.sh
 ENTRYPOINT sh runner.sh
