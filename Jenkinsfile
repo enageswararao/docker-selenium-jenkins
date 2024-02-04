@@ -12,8 +12,8 @@ pipeline {
     }
     stage('Build Image') {
         steps{
-            echo "building docker image"
-
+         echo "building docker image"
+         sh "docker --version"
 	 sh "docker build -t=nagdacker/selenium ."
          }
     }
