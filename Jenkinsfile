@@ -14,14 +14,14 @@ pipeline {
         steps{
             echo "building docker image"
 
-			 sh "docker build -t=nagdacker/selenium ."
+	 sh "docker build -t=nagdacker/selenium ."
          }
     }
         stage('Push  Image') {
             steps{
                 echo "Push docker image"
 
-    			 sh "docker push nagdacker/selenium"
+    	sh "docker push nagdacker/selenium"
              }
         }
    }
